@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Agricultural Export Company Design System */
+
+@layer base {
+  :root {
+    /* Core palette - Earthy greens & warm accents */
+    --background: 40 33% 98%;
+    --foreground: 150 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 150 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 10% 15%;
+
+    /* Primary: Deep Forest Green */
+    --primary: 152 45% 25%;
+    --primary-foreground: 40 33% 98%;
+
+    /* Secondary: Warm Cream */
+    --secondary: 40 30% 94%;
+    --secondary-foreground: 150 10% 15%;
+
+    /* Muted surfaces */
+    --muted: 40 20% 92%;
+    --muted-foreground: 150 8% 45%;
+
+    /* Accent: Golden Amber */
+    --accent: 38 85% 55%;
+    --accent-foreground: 150 10% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 40 33% 98%;
+
+    --border: 40 20% 88%;
+    --input: 40 20% 88%;
+    --ring: 152 45% 25%;
+
+    --radius: 0.5rem;
+
+    /* Custom tokens */
+    --hero-overlay: 152 45% 10%;
+    --section-alt: 40 25% 96%;
+    --gold: 38 85% 55%;
+    --gold-dark: 38 70% 45%;
+    --green-light: 152 35% 40%;
+    --green-dark: 152 50% 18%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(180deg, hsl(152 45% 10% / 0.7) 0%, hsl(152 45% 15% / 0.5) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(38 85% 55%) 0%, hsl(38 70% 45%) 100%);
+    --gradient-green: linear-gradient(135deg, hsl(152 45% 25%) 0%, hsl(152 50% 18%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px hsl(150 10% 15% / 0.05);
+    --shadow-md: 0 4px 12px hsl(150 10% 15% / 0.08);
+    --shadow-lg: 0 12px 32px hsl(150 10% 15% / 0.12);
+    --shadow-gold: 0 4px 20px hsl(38 85% 55% / 0.3);
+
+    /* Typography */
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 152 20% 8%;
+    --foreground: 40 33% 98%;
+
+    --card: 152 20% 12%;
+    --card-foreground: 40 33% 98%;
+
+    --popover: 152 20% 12%;
+    --popover-foreground: 40 33% 98%;
+
+    --primary: 152 40% 45%;
+    --primary-foreground: 152 20% 8%;
+
+    --secondary: 152 15% 18%;
+    --secondary-foreground: 40 33% 98%;
+
+    --muted: 152 15% 18%;
+    --muted-foreground: 40 20% 65%;
+
+    --accent: 38 75% 50%;
+    --accent-foreground: 152 20% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 40 33% 98%;
+
+    --border: 152 15% 20%;
+    --input: 152 15% 20%;
+    --ring: 152 40% 45%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .container-custom {
+    @apply container mx-auto px-4 md:px-6 lg:px-8;
+  }
+
+  .text-gradient-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-gold {
+    background: var(--gradient-gold);
+  }
+
+  .bg-gradient-green {
+    background: var(--gradient-green);
+  }
+
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+}
