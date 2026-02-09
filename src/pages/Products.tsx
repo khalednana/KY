@@ -4,14 +4,14 @@ import Footer from '@/components/Footer';
 import ProductCard from '@/components/ProductCard';
 import AnimatedText from '@/components/AnimatedText';
 
-// Import product images
-import productPotatoes from '@/assets/products/productPotates.jpeg';
+// Corrected image imports (Linux-safe exact names)
+import productPotatoes from '@/assets/products/productPotatoes.jpeg';
 import productCarrots from '@/assets/products/productCarrots.jpeg';
 import productGarlic from '@/assets/products/productGarlic.jpeg';
 import productGrapefruit from '@/assets/products/productGrapefruit.jpeg';
 import productGrapes from '@/assets/products/productGrapes.jpeg';
 import productLemon from '@/assets/products/productLemon.jpeg';
-import productMandarinMerav from '@/assets/products/prodactMandarin(Merav).jpeg';
+import productMandarinMerav from '@/assets/products/productMandarin(Merav).jpeg';
 import productMandarinGoldenNugget from '@/assets/products/productMandarin(Golden_Nugget).jpeg';
 import productMandarinMurcott from '@/assets/products/productMandarin(Murcott).jpeg';
 import productOrangesNavel from '@/assets/products/productOranges(Navel).jpeg';
@@ -20,7 +20,7 @@ import productPeanuts from '@/assets/products/productPeanuts.jpeg';
 import productPomegranate from '@/assets/products/productPomegranate.jpeg';
 import productStrawberry from '@/assets/products/productStrawberry.jpeg';
 import productSweetPotatoes from '@/assets/products/productSweetPotatoes.jpeg';
-import productGreenOnions from '@/assets/products/productsGreenOnions.jpeg';
+import productGreenOnions from '@/assets/products/productGreenOnions.jpeg';
 
 const products = [
   {
@@ -136,7 +136,6 @@ const Products = () => {
     <div className="min-h-screen bg-background">
       <Header />
 
-      {/* Products Section */}
       <section className="section-padding pt-32">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -146,6 +145,7 @@ const Products = () => {
             >
               Our Products
             </AnimatedText>
+
             <AnimatedText
               tag="h1"
               delay={0.1}
@@ -153,6 +153,7 @@ const Products = () => {
             >
               Premium Egyptian Produce
             </AnimatedText>
+
             <AnimatedText delay={0.2} className="font-body text-muted-foreground leading-relaxed">
               We export carefully selected agricultural products that meet the highest 
               international standards for quality, freshness, and food safety.
@@ -160,11 +161,8 @@ const Products = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {products.map((product, index) => (
-              <ProductCard
-                key={product.name}
-                {...product}
-              />
+            {products.map((product) => (
+              <ProductCard key={product.name} {...product} />
             ))}
           </div>
         </div>
