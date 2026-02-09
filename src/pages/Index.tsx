@@ -17,7 +17,7 @@ import heroBackground2 from '@/assets/herobackground2.jpg';
 import aboutUsPic from '@/assets/aboutuspic.jpg';
 
 // Import product images
-import productPotatoes from '@/assets/products/productPotates.jpeg';
+import productPotatoes from '@/assets/products/productPotatoes.jpeg';
 import productCarrots from '@/assets/products/productCarrots.jpeg';
 import productGarlic from '@/assets/products/productGarlic.jpeg';
 import productGrapefruit from '@/assets/products/productGrapefruit.jpeg';
