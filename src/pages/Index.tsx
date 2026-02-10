@@ -32,7 +32,7 @@ import productPeanuts from '@/assets/products/productPeanuts.jpeg';
 import productPomegranate from '@/assets/products/productPomegranate.jpeg';
 import productStrawberry from '@/assets/products/productStrawberry.jpeg';
 import productSweetPotatoes from '@/assets/products/productSweetPotatoes.jpeg';
-import productGreenOnions from '@/assets/products/productsGreenOnions.jpeg';
+import productGreenOnions from '@/assets/products/productGreenOnions.jpeg';
 
 // Import all images from carou folder
 const carouImages = import.meta.glob('/src/assets/carou/*', { eager: true, import: 'default' }) as Record<string, string>;
