@@ -23,7 +23,7 @@ import productGarlic from '@/assets/products/productGarlic.jpeg';
 import productGrapefruit from '@/assets/products/productGrapefruit.jpeg';
 import productGrapes from '@/assets/products/productGrapes.jpeg';
 import productLemon from '@/assets/products/productLemon.jpeg';
-import productMandarinMerav from '@/assets/products/prodactMandarin(Merav).jpeg';
+import productMandarinMerav from '@/assets/products/productMandarin(Merav).jpeg';
 import productMandarinGoldenNugget from '@/assets/products/productMandarin(Golden_Nugget).jpeg';
 import productMandarinMurcott from '@/assets/products/productMandarin(Murcott).jpeg';
 import productOrangesNavel from '@/assets/products/productOranges(Navel).jpeg';
