@@ -8,6 +8,13 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+.next
+.vite
+out
+.env
+.env.local
+.env.*.local    
+
 dist
 dist-ssr
 *.local
