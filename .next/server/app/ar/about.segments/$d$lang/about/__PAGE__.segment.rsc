@@ -1,5 +1,0 @@
-1:"$Sreact.fragment"
-2:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7340adf74ff47ec0.js"],"OutletBoundary"]
-3:"$Sreact.suspense"
-0:{"buildId":"9iEOsbgxtRI_yACqhdGgU","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"container mx-auto px-4 py-12","children":["$","div",null,{"className":"max-w-4xl mx-auto","children":[["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6","children":"من نحن"}],["$","div",null,{"className":"prose prose-lg max-w-none","children":[["$","p",null,{"className":"text-lg text-gray-700 mb-4","children":"Ahmed Abdalla Nanah هي شركة رائدة في التصدير والاستيراد مقرها في Egypt."}],["$","p",null,{"className":"text-lg text-gray-700 mb-4","children":"نحن ملتزمون بتصدير واستيراد منتجات زراعية عالية الجودة تلبي المعايير الدولية."}],["$","p",null,{"className":"text-lg text-gray-700","children":"تمتد خبرتنا عبر مختلف القطاعات الزراعية، مع التركيز على البطاطس والحمضيات للأسواق العالمية."}]]}]]}]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
-4:null
