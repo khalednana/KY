@@ -1,0 +1,14 @@
+{
+  "/[lang]/about/page": "/[lang]/about",
+  "/[lang]/contact/page": "/[lang]/contact",
+  "/[lang]/export/page": "/[lang]/export",
+  "/[lang]/page": "/[lang]",
+  "/[lang]/products/citrus/page": "/[lang]/products/citrus",
+  "/[lang]/products/page": "/[lang]/products",
+  "/[lang]/products/potatoes/page": "/[lang]/products/potatoes",
+  "/[lang]/quality/page": "/[lang]/quality",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/"
+}
