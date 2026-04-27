@@ -1,26 +1,20 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
-import { componentTagger } from "lovable-tagger";
 
-export default defineConfig(({ mode }) => {
-  const isDev = mode === "development";
+import { cloudflare } from "@cloudflare/vite-plugin";
 
-  return {
-    server: {
-      host: "::",
-      port: 8080,
+export default defineConfig({
+  plugins: [react(), cloudflare()], // MUST be static
+
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
     },
+  },
 
-    // IMPORTANT: static + predictable plugin array for Wrangler
-    plugins: isDev
-      ? [react(), componentTagger()]
-      : [react()],
-
-    resolve: {
-      alias: {
-        "@": path.resolve(__dirname, "./src"),
-      },
-    },
-  };
+  server: {
+    host: "::",
+    port: 8080,
+  },
 });
